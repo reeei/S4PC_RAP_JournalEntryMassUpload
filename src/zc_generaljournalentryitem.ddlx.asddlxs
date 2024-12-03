@@ -1,0 +1,166 @@
+@Metadata.layer: #CUSTOMER
+annotate view ZC_GeneralJournalEntryItem with
+{
+  @UI.facet: [ { id:              'General',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'General',
+                 position:        10,
+                 targetQualifier: 'General' },
+               { id:              'COPA',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'CO-PA',
+                 position:        20,
+                 targetQualifier: 'COPA' },
+               { id:              'Onetime',
+                 purpose:         #STANDARD,
+                 type:            #IDENTIFICATION_REFERENCE,
+                 label:           'OnetimeBP',
+                 position:        30,
+                 targetQualifier: 'Onetime' } ]
+  @UI: { lineItem: [{ position: 10}],identification: [{ position: 10, qualifier: 'General' }] }
+  referencedocumentitem;
+  @UI: { lineItem: [{ position: 20}],identification: [{ position: 20, qualifier: 'General' }] }
+  documentitemtext;
+  @UI: { lineItem: [{ position: 25}],identification: [{ position: 25, qualifier: 'General' }] }
+  assignmentreference;
+  @UI: { lineItem: [{ position: 30}],identification: [{ position: 30, qualifier: 'General' }] }
+  amountintransactioncurrency;
+  @UI: { lineItem: [{ position: 35}],identification: [{ position: 35, qualifier: 'General' }] }
+  taxcode;
+  @UI: { lineItem: [{ position: 38}],identification: [{ position: 38, qualifier: 'General' }] }
+  taxamount;
+  @UI: { lineItem: [{ position: 40}],identification: [{ position: 40, qualifier: 'General' }] }
+  @Consumption.valueHelpDefinition: [{ entity: { name:'I_GLAccount', element: 'GLAccount'  } }]
+  glaccount;
+  @UI: { lineItem: [{ position: 50}],identification: [{ position: 50, qualifier: 'General' }] }
+  @Consumption.valueHelpDefinition: [{ entity: { name:'I_CostCenter', element: 'CostCenter'  } }]
+  costcenter;
+  @UI: { lineItem: [{ position: 60}],identification: [{ position: 60, qualifier: 'General' }] }
+  @Consumption.valueHelpDefinition: [{ entity: { name:'I_ProfitCenterStdVH', element: 'ProfitCenter'  } }]
+  profitcenter;
+  @UI: { lineItem: [{ position: 70}],identification: [{ position: 70, qualifier: 'General' }] }
+  wbselement;
+  @UI: { lineItem: [{ position: 80}],identification: [{ position: 80, qualifier: 'General' }] }
+  orderid;
+  @UI: { lineItem: [{ position: 90}],identification: [{ position: 90, qualifier: 'General' }] }
+  customer;
+  @UI: { lineItem: [{ position: 100}],identification: [{ position: 100, qualifier: 'General' }] }
+  supplier;
+  @UI: { lineItem: [{ position: 120}],identification: [{ position: 120, qualifier: 'General' }] }
+  financialtransactiontype;
+  @UI: {identification: [{ position: 130, qualifier: 'General' }] }
+  partnercompany;
+  @UI: {identification: [{ position: 140, qualifier: 'General' }] }
+  valuedate;
+  @UI: {identification: [{ position: 150, qualifier: 'General' }] }
+  segment;
+  @UI: {identification: [{ position: 160, qualifier: 'General' }] }
+  functionalarea;
+  @UI: {identification: [{ position: 170, qualifier: 'General' }] }
+  personnelnumber;
+  @UI: {identification: [{ position: 180, qualifier: 'General' }] }
+  housebank;
+  @UI: {identification: [{ position: 190, qualifier: 'General' }] }
+  housebankaccount;
+  @UI: {identification: [{ position: 200, qualifier: 'General' }] }
+  reference1idbybusinesspartner;
+  @UI: {identification: [{ position: 210, qualifier: 'General' }] }
+  reference2idbybusinesspartner;
+  @UI: {identification: [{ position: 220, qualifier: 'General' }] }
+  reference3idbybusinesspartner;
+  @UI: {identification: [{ position: 230, qualifier: 'COPA' }] }
+  customer_copa;
+  @UI: {identification: [{ position: 240, qualifier: 'COPA' }] }
+  customergroup_copa;
+  @UI: {identification: [{ position: 250, qualifier: 'COPA' }] }
+  customerindustry_copa;
+  @UI: {identification: [{ position: 260, qualifier: 'COPA' }] }
+  customercountry_copa;
+  @UI: {identification: [{ position: 270, qualifier: 'COPA' }] }
+  salesdistrict_copa;
+  @UI: {identification: [{ position: 280, qualifier: 'COPA' }] }
+  soldmaterial_copa;
+  @UI: {identification: [{ position: 290, qualifier: 'COPA' }] }
+  soldmaterialgroup_copa;
+  @UI: {identification: [{ position: 300, qualifier: 'COPA' }] }
+  salesorganization_copa;
+  @UI: {identification: [{ position: 310, qualifier: 'COPA' }] }
+  distributionchannel_copa;
+  @UI: {identification: [{ position: 320, qualifier: 'COPA' }] }
+  wbselement_copa;
+  @UI: {identification: [{ position: 330, qualifier: 'COPA' }] }
+  functionalarea_copa;
+  @UI: {identification: [{ position: 340, qualifier: 'COPA' }] }
+  salesorder_copa;
+  @UI: {identification: [{ position: 350, qualifier: 'COPA' }] }
+  salesorderitem_copa;
+  @UI: {identification: [{ position: 360, qualifier: 'COPA' }] }
+  plant_copa;
+  @UI: {identification: [{ position: 370, qualifier: 'COPA' }] }
+  costcenter_copa;
+  @UI: {identification: [{ position: 380, qualifier: 'COPA' }] }
+  profitcenter_copa;
+
+  @UI: {identification: [{ position: 390, qualifier: 'General' }] }
+  duecalculationbasedate;
+  @UI: {identification: [{ position: 400, qualifier: 'General' }] }
+  cashdiscount1days;
+  @UI: {identification: [{ position: 410, qualifier: 'General' }] }
+  cashdiscount1percent;
+  @UI: {identification: [{ position: 420, qualifier: 'General' }] }
+  cashdiscount2days;
+  @UI: {identification: [{ position: 430, qualifier: 'General' }] }
+  cashdiscount2percent;
+  @UI: {identification: [{ position: 440, qualifier: 'General' }] }
+  paymentterms;
+  @UI: {identification: [{ position: 450, qualifier: 'General' }] }
+  paymentmethod;
+  @UI: {identification: [{ position: 460, qualifier: 'General' }] }
+  paymentblockingreason;
+  @UI: {identification: [{ position: 470, qualifier: 'General' }] }
+  statecentralbankpaymentreason;
+  @UI: {identification: [{ position: 480, qualifier: 'General' }] }
+  specialglcode;
+
+  @UI: {identification: [{ position: 490, qualifier: 'General' }] }
+  bpbankaccountinternalid;
+
+  @UI: {identification: [{ position: 500, qualifier: 'Onetime' }] }
+  name_onetime;
+  @UI: {identification: [{ position: 510, qualifier: 'Onetime' }] }
+  name3_onetime;
+  @UI: {identification: [{ position: 520, qualifier: 'Onetime' }] }
+  cityname_onetime;
+  @UI: {identification: [{ position: 530, qualifier: 'Onetime' }] }
+  bankcountry_onetime;
+  @UI: {identification: [{ position: 540, qualifier: 'Onetime' }] }
+  bankaccount_onetime;
+  @UI: {identification: [{ position: 550, qualifier: 'Onetime' }] }
+  bankcontrolkey_onetime;
+  @UI: {identification: [{ position: 560, qualifier: 'Onetime' }] }
+  banknumber_onetime;
+  @UI: {identification: [{ position: 570, qualifier: 'Onetime' }] }
+  datamediumexchangekey_onetime;
+  @UI: {identification: [{ position: 580, qualifier: 'Onetime' }] }
+  languageisocode_onetime;
+
+  @UI: {identification: [{ position: 590, qualifier: 'General' }] }
+  withholdingtaxtype;
+  @UI: {identification: [{ position: 600, qualifier: 'General' }] }
+  withholdingtaxcode;
+  @UI: {identification: [{ position: 610, qualifier: 'General' }] }
+  withholdingtaxbaseamount;
+  @UI: {identification: [{ position: 620, qualifier: 'General' }] }
+  withholdingtaxamount;
+
+  @UI: {identification: [{ position: 630, qualifier: 'General' }] }
+  Item_Created_By;
+  @UI: {identification: [{ position: 640, qualifier: 'General' }] }
+  Item_Created_At;
+  @UI: {identification: [{ position: 650, qualifier: 'General' }] }
+  Item_Last_Changed_By;
+  @UI: {identification: [{ position: 660, qualifier: 'General' }] }
+  Item_Last_Changed_At;
+}
